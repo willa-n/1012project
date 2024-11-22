@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title> Merch</title>
+    <meta charset ="UTF-8">
+    <link href="merch.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico" />
+    <script src ="merch.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+            <a href="homePage.html"><div class="main_header">
+                <h1 class="title"> Obsidian Tickets</h1>
+                </div></a>
+              <nav class="menu_header" id="menu">
+                <ul>
+                    <a href="homePage.html"><li >Home Page</li></a>
+                    <a href="purchasePage.html"><li>Purchase tickets</li></a>
+                    <a href="donations.html"><li>Donations</li></a>
+                    <a href="merch.html"><li>Merch</li></a>
+                    <a href="quizPage.html"><li>Quiz</li></a>
+                    <a href="FAQ.html"><li>FAQ'S</li></a>
+                    <a href="cartPage.html"> <li> My Cart</li> </a>
+                  </ul>
+                  </nav>
+            </header>
+
+  <!--STUFF UNIQUE TO THIS SPECIFIC PAGE IS BELOW!!-->
+       <div>
+        <img class = "item" src="image/merch1.png" alt="a blue and white striped football jersey">
+       </div>
+     <div class="merchText"><h3 id ="itemName">Argentina Jersey</h3>
+    <p>
+        $<span id ="itemPrice">99.99</span> CAD
+        <br>
+        A jersey with the Argentinian colours on it.
+    </p>
+    <div id="form-container">
+        <label for="size">Size:</label>
+        <select id="size">
+          <option value="small">S</option>
+          <option value="med">M</option>
+          <option value="large">L</option>
+        </select>
+        <br>
+        <label>Quantity:</label>
+        <input type="number" id="quantity" min="1" value="1" >
+      </div>
+      <br>
+    <button onclick = addMerchSetter()>Add to Cart</button>
+
+</div> 
+
+    <footer class="menu_header footer">
+        <div class="contact_details"><strong>Contact us:</strong> <br><br> Email - Obsidian@tickets.com <br><br> Phone: +1 (647) 786 5253 <br><br> Main Office: 5353 Stargazer Avenue, Lt4 9F1, Mississauga, Ontario</div>
+      </footer>
+    </div>
+    </body>
+</html>

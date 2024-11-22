@@ -1,0 +1,282 @@
+@charset "UTF-8";
+a {
+  text-decoration: none;
+}
+
+.container {
+	background-color: #FFFFFF; 
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.main_header {
+	width: 100%;
+	background-color: #526c5d;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	clear: left;
+	border-bottom: 2px solid #526c5d;
+}
+
+.menu_header {
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #b5d7b5;
+	clear: left;
+	color: white;
+}
+.container .menu_header ul {
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 15px;
+	width: 100%;
+	color: white;
+}
+.menu_header ul li {
+	list-style: none;
+	float: left;
+	margin-right: auto;
+	font-family: "Source Sans Pro";
+	font-weight: normal;
+	color: #FFFFFF;
+	letter-spacing: 1px;
+	margin-left: auto;
+	text-align: center;
+	width: 13%;
+	transition: all 0.3s linear;
+}
+
+.menu_header ul li:hover {
+	color: #526c5d;
+	cursor: pointer;
+}
+
+.title {
+	font-weight: bold;
+	font-style: normal;
+	font-family: "Source Sans Pro";
+	text-align: center;
+	color: #FFFFFF;
+	letter-spacing: 2px;
+}
+
+.footer {
+	background-color: #526c5d;
+}
+
+@media (max-width: 320px) {
+.menu_header ul li {
+	float: none;
+	margin-top: 28px;
+	width: 100%;
+}
+
+.container .menu_header ul {
+	height: auto;
+	width: 100%;
+	text-align: center;
+}
+
+.menu_header {
+	padding-top: 1px;
+	padding-bottom: 40px;
+}
+}
+* {
+    box-sizing: border-box
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.contact_details {
+	text-align: center;
+	background-color: #526c5d;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-weight: lighter;
+	letter-spacing: 2px;
+	border-top-width: 1px;
+	font-family: "Source Sans Pro";
+}
+/*.......................Additional css for ticket purchase page....................*/
+
+body {
+    font-family: "Lato";
+   
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+.container2 {
+  background-color: #cee4ce;
+  padding: 5px 8px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  text-align: center;
+
+}
+
+.row2 {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+    align-items: center;
+  }
+
+  /* Create two unequal columns that floats next to each other */
+
+  #form-container {
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  label, select {
+    margin-bottom: 10px;
+  }
+
+  .input1 {
+    margin-bottom: 10px;
+  }
+
+  #cart-summary {
+    text-align: center;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 7px;
+    text-align: left;
+    
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+
+  .add {
+    display: inline-block;
+    background-color: #526c5d;
+    text-align: center;
+    color: #fff;
+    align-items: center;
+    padding: 4px 8px 4px 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 13px;
+    margin-top: 20px;
+    cursor: pointer;
+
+  }
+
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+  }
+  
+  .col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+  }
+  
+  .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+  }
+  
+  .col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+  }
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+  
+  .container1 {
+    background-color:#cee4ce ;
+  
+    
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  
+  .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+    text-align: center;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  hr {
+    border: 1px solid lightgrey;
+  }
+  
+  span.price {
+    float: right;
+    color: grey;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+  @media (max-width: 800px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+  }

@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buy Tickets</title>
+  <link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico" />
+  <link href="cartPage.css" rel="stylesheet" type="text/css">
+  <script src="cartPage.js"></script>
+
+</head>
+<body onload = merchGetter()>
+
+<div class="container">
+  <header>
+    <a href="homePage.html"> <div class="main_header">
+      <h1 class="title"> Obsidian Tickets</h1>
+    </div></a>
+    <nav class="menu_header" id="menu">
+      <ul>
+        <a href="homePage.html"><li> Home Page </li></a>
+        <a href="purchasePage.html"><li> Purchase tickets </li></a>
+        <a href="donations.html"><li> Donations</li> </a>
+        <a href="merch.html"><li>Merch</li></a>
+        <a href="quizPage.html"><li> Quiz </li></a>
+        <a href="FAQ.html"><li> FAQ'S </li></a>
+        <a href="cartPage.html"> <li> My Cart</li> </a>
+      </ul>
+    </nav>
+  </header>
+  
+  <body >
+<h2>Please select your ticket type</h2>
+  <div class="row2">
+    <div class="col-25">
+      <div class="container2">
+        <div id="form-container">
+          <label for="ticket-type">Select Ticket Type:</label>
+          <select id="ticket-type">
+            <option value="V.I.P">V.I.P - $40</option>
+            <option value="Economy">Economy - $25</option>
+          </select>
+        
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" min="1" value="1">
+        </div>
+        
+        <button class="add" onclick="addToCart()">Add to Cart</button>
+        <button class="add" onclick="resetCart()">Reset</button>
+        
+        <div id="cart-summary">
+          <h2>Cart Summary</h2>
+          <table id="cart-items">
+            <thead>
+              <tr>
+                <th>Ticket Type</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <p id="total">Total: $0.00</p>
+        </div> 
+      </div>   
+      
+      
+    <h2>Payment Information</h2>
+    
+<div class="row">
+  <div class="col-75">
+    <div class="container1">
+      <form id = "cartForm" onsubmit = "popUp()">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="John M. Doe" required>
+            
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="john@example.com" required>
+            
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="111 Yonge Street" required>
+            
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="Toronto" required>
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">Province</label>
+                <input type="text" id="state" name="province" placeholder="ON" required>
+              </div>
+              <div class="col-50">
+                <label for="zip">Postal Code</label>
+                <input type="text" id="zip" name="zip" placeholder="M1M 1M1" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="John More Doe" required>
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September" required>
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2018" required>
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352" required>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+     </div>
+    </div>
+   </div>
+
+
+  </body>
+  <footer class="menu_header footer">
+    <div class="contact_details"><strong>Contact us:</strong> <br><br> Email - Obsidian@tickets.com <br><br> Phone: +1 (647) 786 5253 <br><br> Main Office: 5353 Stargazer Avenue, Lt4 9F1, Mississauga, Ontario</div>
+  </footer>
+ </div>
+</html>

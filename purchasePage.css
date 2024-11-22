@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	background-color: #FFFFFF; 
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.main_header {
+	width: 100%;
+	background-color: #526c5d;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	clear: left;
+	border-bottom: 2px solid #526c5d;
+}
+
+.menu_header {
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #b5d7b5;
+	clear: left;
+	color: white;
+}
+.container .menu_header ul {
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 15px;
+	width: 100%;
+	color: white;
+}
+.menu_header ul li {
+	list-style: none;
+	float: left;
+	margin-right: auto;
+	font-family: "Source Sans Pro";
+	font-weight: normal;
+	color: #FFFFFF;
+	letter-spacing: 1px;
+	margin-left: auto;
+	text-align: center;
+	width: 13%;
+	transition: all 0.3s linear;
+}
+
+.menu_header ul li:hover {
+	color: #526c5d;
+	cursor: pointer;
+}
+
+.title {
+	font-weight: bold;
+	font-style: normal;
+	font-family: "Source Sans Pro";
+	text-align: center;
+	color: #FFFFFF;
+	letter-spacing: 2px;
+}
+
+.footer {
+	background-color: #526c5d;
+}
+
+@media (max-width: 320px) {
+.menu_header ul li {
+	float: none;
+	margin-top: 28px;
+	width: 100%;
+}
+
+.container .menu_header ul {
+	height: auto;
+	width: 100%;
+	text-align: center;
+}
+
+.menu_header {
+	padding-top: 1px;
+	padding-bottom: 40px;
+}
+}
+* {
+    box-sizing: border-box
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.contact_details {
+	text-align: center;
+	background-color: #526c5d;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-weight: lighter;
+	letter-spacing: 2px;
+	border-top-width: 1px;
+	font-family: "Source Sans Pro";
+}
+
+/* ----------------------------------- Adittional css for purchase page ----------------------------------- */
+
+.teamImage {
+	width: 5%;
+	float: left;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	padding: 20px;
+	margin: 10px auto;
+}
+
+.teamImage img {
+	height: 305px;
+	width: 430px;
+}
+
+.box {
+	background-color: #97aea1;
+    padding: 20px;
+	float: left;
+    width: 900px;
+	margin: 30px auto;
+	font-family: "Source Sans Pro";
+	font-weight: normal;
+    box-shadow: 0 0 10px black ;
+	color: whitesmoke;
+	text-align: center;
+}
+
+.box > h1 > img {
+	height: 45px;
+	width: 45px;
+}
+
+.purchaseButton {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+	font-family: "Source Sans Pro";
+	font-weight: normal;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+	text-align: center;
+}
+
+.purchaseButton:hover {
+    background-color: #0056b3;
+}
